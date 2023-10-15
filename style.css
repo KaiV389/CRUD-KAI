@@ -3,8 +3,9 @@ body{
 }
 .body_background {
     background-image: url(bg.jpeg);
+    background-size: cover;
     background-position: center;
-    background-size: 300%;
+    background-size: 400%;
     background-repeat: no-repeat;
 
 }
@@ -13,7 +14,7 @@ body{
     font-size: 30px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-#bloque{
+#header{
     width: 100%;
     border: 5px;
     border-color: white;
