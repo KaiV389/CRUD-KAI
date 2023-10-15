@@ -19,8 +19,11 @@ tareas=[];
         var nombre= document.getElementById("Nombre").value;
     
     
-        localStorage.setItem("Nombre", tareas);
-        //nombre + "Materia " + materia + "  Actividad a realizar " + actividad + "  entregar antes de: " + fecha
+        localStorage.setItem("Nombre", nombre);
+        localStorage.setItem("Materia", materia);
+        localStorage.setItem("Tarea", tarea);
+        localStorage.setItem("Fecha", fecha);
+        //nombre + "Materia " + materia + "  Actividad a realizar " + actividad + "  entregar antes de: " + fecha       
         document.getElementById("info").innerHTML =  tareas;
         
         addUser()
@@ -30,5 +33,10 @@ tareas=[];
 
 function addUser() {
       
-    
+   
+    Nomb = localStorage.getItem("Nombre");
+	Mat = localStorage.getItem("Materia");
+    Tar = localStorage.getItem("Tarea");
+	Fec = localStorage.getItem("Fecha");
+    console.log(Nomb + "  Materia: " + Mat + "  Actividad a realizar: " + Tar + "  entregar antes de: " + Fec)
 };
